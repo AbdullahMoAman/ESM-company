@@ -1,0 +1,39 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  scroll-behavior: smooth;
+}
+.gradient-bg {
+  background-color: transparent;
+  backdrop-filter: blur(13px);
+  color: black;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.pricing-card {
+  transition: all 0.3s ease;
+  border: 2.5px solid transparent;
+}
+.pricing-card:hover {
+  border-color: #000;
+  transform: scale(1.04);
+}
+.premium-card {
+  background: linear-gradient(135deg, #000e37 0%, #3f768e 100%);
+  color: white;
+}
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hover-on:hover {
+  background-color: #2b2b2b;
+  transition: 0.2s ease;
+  transform: scale(1.07) translateY(10px);
+}
