@@ -10,7 +10,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style></style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&display=swap");
+      body {
+        margin: 0;
+        font-family: "Cairo", sans-serif;
+        background: #fcfcfc;
+        color: #555555;
+        direction: rtl;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .container {
+        max-width: 1200px;
+        padding: 20px 30px;
+        margin: 0 auto;
+      }
+      /* Vision Section */
+      .vision-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+      }
+    </style>
   </head>
   <body class="bg-gray-50">
     <!-- Header -->
@@ -33,7 +56,7 @@
               >عن الشركة</a
             >
             <a href="#testimonials" class="hover:text-blue-500 transition"
-              >تجارب العملاء</a
+              >شبكة مستشارينا</a
             >
             <a href="#pricing" class="hover:text-blue-500 transition"
               >الباقات</a
@@ -48,15 +71,15 @@
 
     <!-- Hero Section -->
     <section
-      class="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-500 via-gray-400 to-gray-800 text-black py-20 rounded-lg"
+      class="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-100 via-gray-200 to-gray-400 text-black py-20 rounded-lg"
     >
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">
           شريكك الأمثل للاستثمار الناجح في المملكة العربية السعودية
         </h2>
         <p class="text-xl mb-8">
-          نقدم لك دراسات الجدوى والاستشارات المتخصصة لضمان نجاح مشروعك الصناعي
-          أو التجاري
+          نقدم لك دراسات الجدوى والاستشارات المتخصصة لضمان نجاح مشروعك في عدة
+          قطاعات, كالقطاع الصناعي او التجاري او الخدمي.
         </p>
         <button
           onclick="scrollToSection('pricing')"
@@ -256,76 +279,321 @@
       </div>
     </section>
 
-    <!-- Vision Section -->
-    <section id="testimonials" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">
-          الرؤية والرسالة والقيم الجوهرية
+    <div style="width: 700px; position: relative">
+      <img
+        src="our-values-main.jpg"
+        alt=""
+        style="
+          position: absolute;
+          left: 0px;
+          right: 294px;
+          /* height: 706px; */
+          width: 100%;
+          border-radius: 0 0 20% 20%;
+          opacity: 0.7;
+        "
+      />
+    </div>
+
+    <!-- Our values -->
+    <section
+      id="#testimonials"
+      style="
+        background: #f9f9f9;
+        padding: 40px 20px;
+        font-family: 'Arial', sans-serif;
+        direction: rtl;
+        position: relative;
+      "
+    >
+      <div style="max-width: 1200px; margin: 0 auto; text-align: right">
+        <h2
+          style="
+            font-weight: bold;
+            color: #b49c75;
+            font-size: 50px;
+            margin-bottom: 40px;
+            font-family: 'Tajawal';
+            position: relative;
+          "
+          class="our-values"
+        >
+          قيمنـــــا<br />
         </h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-lg">
-            <div class="flex items-center mb-6">
-              <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00966171-6549-4b87-818f-1865ea44c8a1.png"
-                alt="صورة أحمد السديس - رجل أعمال سعودي يرتدي بدلة رسمية بابتسامة واثقة"
-                class="w-12 h-12 rounded-full"
-              />
-              <div class="mr-4">
-                <h4 class="font-semibold">الرؤية</h4>
-              </div>
-            </div>
-            <p class="text-gray-600 mb-4">
-              "أن نكون ضمن الشركات الرائدة في تمكين الاستثمار بالمملكة العربية
-              السعودية, وخلق بيئة تجارية جاذبة وآمنة للمستثمرين المحليين
-              والدوليين"
+        <div
+          style="
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          "
+        >
+          <!-- قيمة 1 -->
+          <div
+            style="
+              flex: 1 1 180px;
+              background: #fff;
+              border-radius: 15px;
+              padding: 20px;
+              box-shadow: 0 0 10px #ccc;
+            "
+          >
+            <img
+              src="our values 1.png"
+              alt="Innovation"
+              style="
+                width: 70px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            />
+            <h4
+              style="
+                color: #b49c75;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              الابتكار
+            </h4>
+            <p style="font-size: 14px; color: #666; line-height: 1.4">
+              نواكب تطورات السوق ونقدم استراتيجيات استثمارية جديدة ومرنة.
             </p>
-            <div class="flex text-yellow-400">
-              <span>★</span><span>★</span><span>★</span><span>★</span
-              ><span>★</span>
-            </div>
-          </div>
-          <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-lg">
-            <div class="flex items-center mb-6">
-              <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b6da0b53-6acb-4a5e-890e-d9ffe0995afe.png"
-                alt="صورة سارة العتيبي - سيدة أعمال سعودية ترتدي زي عمل أنيق مع نظارات طبية"
-                class="w-12 h-12 rounded-full"
-              />
-              <div class="mr-4">
-                <h4 class="font-semibold">سارة العتيبي</h4>
-                <p class="text-blue-600 text-sm">مستثمرة في قطاع التجارة</p>
-              </div>
-            </div>
-            <p class="text-gray-600 mb-4">
-              "الاستشارات الإدارية كانت نقطة التحول في مشروعي، فريق العمل محترف
-              جداً ويعرف كيف يوصل المعلومة بشكل واضح وسلس."
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                line-height: 1.2;
+                margin-top: 10px;
+              "
+            >
+              Innovation: We keep pace with market trends and provide flexible,
+              forward-thinking investment strategies.
             </p>
-            <div class="flex text-yellow-400">
-              <span>★</span><span>★</span><span>★</span><span>★</span
-              ><span>★</span>
-            </div>
           </div>
-          <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-lg">
-            <div class="flex items-center mb-6">
-              <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/930697a2-6db3-447d-9289-240914d972fa.png"
-                alt="صورة محمد القحطاني - رجل أعمال شاب يرتدي قميص رسمي بابتسامة مشرقة"
-                class="w-12 h-12 rounded-full"
-              />
-              <div class="mr-4">
-                <h4 class="font-semibold">محمد القحطاني</h4>
-                <p class="text-blue-600 text-sm">مؤسس شركة ناشئة</p>
-              </div>
-            </div>
-            <p class="text-gray-600 mb-4">
-              "الباقة التجريبية أعطتني فكرة واضحة عن جودة العمل، وكانت كافية
-              لأتخذ قرار الاستثمار في الباقة المتكاملة."
+
+          <!-- قيمة 2 -->
+          <div
+            style="
+              flex: 1 1 180px;
+              background: #fff;
+              border-radius: 15px;
+              padding: 20px;
+              box-shadow: 0 0 10px #ccc;
+            "
+          >
+            <img
+              src="commitment.png"
+              alt="Commitment"
+              style="
+                width: 70px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            />
+            <h4
+              style="
+                color: #b49c75;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              الالتزام
+            </h4>
+            <p style="font-size: 14px; color: #666; line-height: 1.4">
+              نعمل وفق الأنظمة واللوائح السعودية بما يضمن استثمارات آمنة
+              ومستدامة.
             </p>
-            <div class="flex text-yellow-400">
-              <span>★</span><span>★</span><span>★</span><span>★</span
-              ><span>★</span>
-            </div>
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                line-height: 1.2;
+                margin-top: 10px;
+              "
+            >
+              Commitment: We comply fully with Saudi laws and regulations to
+              ensure safe and sustainable investments.
+            </p>
           </div>
+
+          <!-- قيمة 3 -->
+          <div
+            style="
+              flex: 1 1 180px;
+              background: #fff;
+              border-radius: 15px;
+              padding: 20px;
+              box-shadow: 0 0 10px #ccc;
+            "
+          >
+            <img
+              src="partnership.png"
+              alt="Partnership"
+              style="
+                width: 70px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            />
+            <h4
+              style="
+                color: #b49c75;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              الشراكة
+            </h4>
+            <p style="font-size: 14px; color: #666; line-height: 1.4">
+              نبني علاقات طويلة قائمة على الثقة والمنفعة المتبادلة.
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                line-height: 1.2;
+                margin-top: 10px;
+              "
+            >
+              Partnership: We build long-term relationships based on trust and
+              mutual benefit.
+            </p>
+          </div>
+
+          <!-- قيمة 4 -->
+          <div
+            style="
+              flex: 1 1 180px;
+              background: #fff;
+              border-radius: 15px;
+              padding: 20px;
+              box-shadow: 0 0 10px #ccc;
+            "
+          >
+            <img
+              src="excellence.png"
+              alt="Excellence"
+              style="
+                width: 70px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            />
+            <h4
+              style="
+                color: #b49c75;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              التميز
+            </h4>
+            <p style="font-size: 14px; color: #666; line-height: 1.4">
+              نقدم حلولًا مبتكرة مدعومة بخبرات محلية وعالمية.
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                line-height: 1.2;
+                margin-top: 10px;
+              "
+            >
+              Excellence: We deliver innovative solutions backed by both local
+              and global expertise.
+            </p>
+          </div>
+
+          <!-- قيمة 5 -->
+          <div
+            style="
+              flex: 1 1 180px;
+              background: #fff;
+              border-radius: 15px;
+              padding: 20px;
+              box-shadow: 0 0 10px #ccc;
+            "
+          >
+            <img
+              src="integrity.png"
+              alt="Integrity"
+              style="
+                width: 70px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            />
+            <h4
+              style="
+                color: #b49c75;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              النزاهة
+            </h4>
+            <p style="font-size: 14px; color: #666; line-height: 1.4">
+              نلتزم بالشفافية في جميع تعاملاتنا مع العملاء والشركاء.
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                color: #999;
+                line-height: 1.2;
+                margin-top: 10px;
+              "
+            >
+              Integrity: We uphold transparency in all dealings with clients and
+              partners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- شبكة مستشارينا -->
+    <section
+      id="#testimonials"
+      style="
+        background: #f9f9f9;
+        padding: 40px 20px;
+        font-family: 'Arial', sans-serif;
+        direction: rtl;
+        position: relative;
+      "
+    >
+      <div style="max-width: 1200px; margin: 0 auto; text-align: center">
+        <h2
+          style="
+            font-weight: bold;
+            color: #b49c75;
+            font-size: 28px;
+            margin-bottom: 40px;
+            font-family: 'Tajawal';
+            position: relative;
+          "
+          class="our-values"
+        >
+          <br />
+        </h2>
+        <div class="w-full">
+          <img src="consulting.png" alt="" />
         </div>
       </div>
     </section>
@@ -535,14 +803,14 @@
                     class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
                     >📱</span
                   >
-                  <span>+966 12 345 6789</span>
+                  <span>966531350736+</span>
                 </div>
                 <div class="flex items-center">
                   <span
                     class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
                     >✉️</span
                   >
-                  <span>info@strategic-planning.com</span>
+                  <span>est25.co@gmail.com</span>
                 </div>
                 <div class="flex items-center">
                   <span
@@ -593,11 +861,11 @@
           <div>
             <div class="flex items-center mb-4">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b211d7cf-96a8-4ffe-87c6-7d87867057e5.png"
-                alt="شعار مؤسسة التخطيط الاستراتيجي مصغر"
-                class="w-10 h-10 rounded-lg mr-3"
+                src="ESM.jpg"
+                alt="شعار مؤسسة التخطيط الاستراتيجي - مبنى حديث بتصميم عصري بألوان زرقاء وبيضاء تعبر عن الاحترافية والثقة"
+                class="w-12 h-12 rounded-lg ml-3"
               />
-              <span class="font-bold">مؤسسة التخطيط الاستراتيجي</span>
+              <span class="font-bold">مؤسسة ESM للاستثمار</span>
             </div>
             <p class="text-gray-400">نحو مستقبل استثماري ناجح</p>
           </div>
@@ -634,7 +902,7 @@
         <div
           class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>© 2024 مؤسسة التخطيط الاستراتيجي. جميع الحقوق محفوظة.</p>
+          <p>مؤسسة ESM للاستثمار . جميع الحقوق محفوظة.©</p>
         </div>
       </div>
     </footer>
