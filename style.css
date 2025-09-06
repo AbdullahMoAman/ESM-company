@@ -1,3 +1,8 @@
+/*
+الخط الرسمي
+font-family: 'Tajawal'; 
+*/
+
 body {
   font-family: "Tajawal", sans-serif;
   scroll-behavior: smooth;
@@ -8,6 +13,25 @@ body {
   color: black;
 }
 
+.psuduEl::before {
+  content: "";
+  position: absolute;
+  background-color: #b49c75;
+  width: 12px;
+  height: 60px;
+  top: 0px;
+  right: -30px;
+}
+
+.our-values::before {
+  content: "";
+  position: absolute;
+  background-color: #b49c75;
+  width: 9px;
+  height: 32px;
+  top: 21px;
+  right: -17px;
+}
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
