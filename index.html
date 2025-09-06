@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مؤسسة التخطيط الاستراتيجي - دراسات الجدوى والاستشارات</title>
+    <title>مؤسسة ESM للاستثمار</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"
@@ -279,25 +279,44 @@
       </div>
     </section>
 
-    <div style="width: 700px; position: relative">
-      <img
-        src="our-values-main.jpg"
-        alt=""
-        style="
-          position: absolute;
-          left: 0px;
-          right: 294px;
-          /* height: 706px; */
-          width: 100%;
-          border-radius: 0 0 20% 20%;
-          opacity: 0.7;
-        "
-      />
-    </div>
+    <!-- Our vision  -->
+
+    <section id="vision" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2
+              class="psuduEl text-5xl font-bold mb-6 text-gray-800"
+              style="color: #b49c75; font-family: 'Tajawal'; position: relative"
+            >
+              رؤيتنــــا
+            </h2>
+            <p class="text-gray-600 mb-10 font-bold">
+              أن نكون الشريك الاستثماري الأمثل الذي يقود التحول الاقتصادي من
+              خلال ربط رؤوس الأموال العالمية بالفرص الاستثمارية الواعدة في
+              المملكة العربية السعودية.
+            </p>
+            <p class="text-gray-600 mb-4 font-bold">
+              To be the ideal investment partner leading economic tranformation
+              by connecting global capital with promising opportunities in Saudi
+              Arabia.
+            </p>
+          </div>
+          <div>
+            <img
+              src="vision.jpg"
+              alt="فريق عمل احترافي في اجتماع عمل داخل مكتب عصري بألوان هادئة، يظهر التعاون والاحترافية في بيئة العمل"
+              class="rounded-x1 w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Our values -->
     <section
       id="#testimonials"
+      class="values"
       style="
         background: #f9f9f9;
         padding: 40px 20px;
@@ -316,18 +335,11 @@
             font-family: 'Tajawal';
             position: relative;
           "
-          class="our-values"
+          class="psuduEl"
         >
           قيمنـــــا<br />
         </h2>
-        <div
-          style="
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-          "
-        >
+        <div class="grid md:grid-cols-2 gap-12 items-center">
           <!-- قيمة 1 -->
           <div
             style="
@@ -355,11 +367,12 @@
                 margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 30px;
               "
             >
               الابتكار
             </h4>
-            <p style="font-size: 14px; color: #666; line-height: 1.4">
+            <p class="text-gray-600 mb-5 font-bold">
               نواكب تطورات السوق ونقدم استراتيجيات استثمارية جديدة ومرنة.
             </p>
             <p
@@ -402,11 +415,12 @@
                 margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 30px;
               "
             >
               الالتزام
             </h4>
-            <p style="font-size: 14px; color: #666; line-height: 1.4">
+            <p class="text-gray-600 mb-5 font-bold">
               نعمل وفق الأنظمة واللوائح السعودية بما يضمن استثمارات آمنة
               ومستدامة.
             </p>
@@ -450,11 +464,12 @@
                 margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 30px;
               "
             >
               الشراكة
             </h4>
-            <p style="font-size: 14px; color: #666; line-height: 1.4">
+            <p class="text-gray-600 mb-5 font-bold">
               نبني علاقات طويلة قائمة على الثقة والمنفعة المتبادلة.
             </p>
             <p
@@ -497,11 +512,12 @@
                 margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 30px;
               "
             >
               التميز
             </h4>
-            <p style="font-size: 14px; color: #666; line-height: 1.4">
+            <p class="text-gray-600 mb-5 font-bold">
               نقدم حلولًا مبتكرة مدعومة بخبرات محلية وعالمية.
             </p>
             <p
@@ -544,11 +560,12 @@
                 margin-bottom: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 30px;
               "
             >
               النزاهة
             </h4>
-            <p style="font-size: 14px; color: #666; line-height: 1.4">
+            <p class="text-gray-600 mb-5 font-bold">
               نلتزم بالشفافية في جميع تعاملاتنا مع العملاء والشركاء.
             </p>
             <p
@@ -569,7 +586,7 @@
 
     <!-- شبكة مستشارينا -->
     <section
-      id="#testimonials"
+      id="testimonials"
       style="
         background: #f9f9f9;
         padding: 40px 20px;
@@ -588,7 +605,7 @@
             font-family: 'Tajawal';
             position: relative;
           "
-          class="our-values"
+          class="psuduEl"
         >
           <br />
         </h2>
@@ -786,6 +803,32 @@
         </button>
       </div>
     </div>
+
+    <!-- Whu us ? -->
+
+    <section id="why-us" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-1 gap-12 items-center">
+          <div>
+            <h2
+              class="psuduEl text-5xl font-bold mb-6 text-gray-800"
+              style="color: #b49c75; font-family: 'Tajawal'; position: relative"
+            >
+              لماذا نحن ؟
+            </h2>
+            <p class="text-gray-600 mb-10 font-bold"></p>
+            <p class="text-gray-600 mb-4 font-bold"></p>
+          </div>
+          <div>
+            <img
+              src="why-us.png"
+              alt="فريق عمل احترافي في اجتماع عمل داخل مكتب عصري بألوان هادئة، يظهر التعاون والاحترافية في بيئة العمل"
+              class="rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
