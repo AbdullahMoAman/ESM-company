@@ -72,3 +72,57 @@ body {
 }
 
 /* Selecting spicifec language modal */
+.selectLan {
+  border: darkblue solid 2px;
+  border-bottom: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  position: absolute;
+  left: 4px;
+  top: 22%;
+  font-weight: bold;
+}
+
+.selectLan:hover {
+  color: blue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lan {
+  position: absolute;
+  left: -15px;
+  top: 79px;
+  border: white solid 1px;
+  display: none;
+  flex-direction: column;
+  background: #01136eab;
+  backdrop-filter: blur(23px);
+  color: white;
+  padding: 9px;
+  text-align: center;
+  gap: 15px;
+  border-top: transparent;
+  border-bottom: transparent;
+  width: 128px;
+  transition: 0.5s;
+}
+
+/* .selectLan:hover .lan {
+  display: flex;
+} */
+
+.lan a {
+  border: 2px #77a2ff solid;
+  margin: 10px 0;
+  background: #00000030;
+  border-radius: 10px;
+  border-left: transparent;
+  padding: 7px 0px;
+  transition: 0.5s;
+}
+
+.lan a:hover {
+  background-color: black;
+  transition: 0.5s;
+}

@@ -81,3 +81,10 @@ document.querySelectorAll('header a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+let selectLan = document.querySelector(".selectLan");
+let lan = document.querySelector(".lan");
+
+selectLan.addEventListener("click", function () {
+  lan.style.display = lan.style.display === "flex" ? "none" : "flex";
+});

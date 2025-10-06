@@ -42,7 +42,6 @@
         border-right: transparent;
         border-radius: 20px;
         margin-bottom: 10px;
-        margin-top: 10px;
       }
 
       /* Vision Section */
@@ -77,6 +76,8 @@
       <nav class="container myBorder mx-auto px-6 py-4">
         <div class="flex justify-between items-center text-black">
           <div class="hidden md:flex space-x-9">
+            <a href="#" style="visibility: hidden">hidden hidden hidden</a>
+
             <a href="#contact" class="hover:text-blue-500 transition ml-7"
               >Contact us</a
             >
@@ -90,6 +91,47 @@
             <a href="#services" class="hover:text-blue-500 transition"
               >Our services</a
             >
+            <div
+              class="selectLan"
+              style="
+                border: darkblue solid 2px;
+                border-bottom: transparent;
+                border-radius: 15px;
+                padding: 10px;
+                position: absolute;
+                right: 15px;
+                top: 7%;
+                width: 122px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
+              select a language
+              <div
+                class="lan"
+                style="
+                  position: absolute;
+                  left: -15px;
+                  top: 79px;
+                  border: white solid 1px;
+                  display: none;
+                  flex-direction: column;
+                  background: #01136eab;
+                  backdrop-filter: blur(23px);
+                  color: white;
+                  padding: 9px;
+                  text-align: center;
+                  gap: 15px;
+                  border-top: transparent;
+                  border-bottom: transparent;
+                  width: 128px;
+                  transition: 0.5s;
+                "
+              >
+                <a href="index.html">Arabic ( عربي )</a>
+                <a href="indexEng.html">English</a>
+              </div>
+            </div>
           </div>
 
           <div class="flex items-center space-x-4">
@@ -823,15 +865,17 @@
         >
           <span class="text-2xl text-green-600">✓</span>
         </div>
-        <h3 class="text-2xl font-bold mb-4 text-green-600">تم الدفع بنجاح!</h3>
+        <h3 class="text-2xl font-bold mb-4 text-green-600">
+          ! payment completed successfully
+        </h3>
         <p class="text-gray-600 mb-6">
-          شكراً لثقتك بنا. يمكنك الآن تحميل دراسة الجدوى الخاصة بك.
+          thank you for your trust. now you can download your feasibility
         </p>
         <button
           onclick="downloadPDF()"
           class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
         >
-          تحميل PDF
+          downlad PDF
         </button>
       </div>
     </div>
@@ -858,7 +902,7 @@
           onclick="closeModal()"
           class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
         >
-          حسناً
+          Ok
         </button>
       </div>
     </div>
@@ -1004,11 +1048,17 @@
           <div>
             <h4 class="font-semibold mb-4">follow us</h4>
             <div class="flex space-x-4">
-              <a href="" class="text-gray-400 hover:text-white"
+              <a
+                href="https://www.tiktok.com/@est25.co?lang=en"
+                target="_blank"
+                class="text-gray-400 hover:text-white"
                 ><i class="fa-brands fa-tiktok"></i
               ></a>
 
-              <a href="#" class="text-gray-400 hover:text-white"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="text-gray-400 hover:text-white"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
