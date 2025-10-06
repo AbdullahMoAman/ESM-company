@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
+    <!-- Font awsome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="shortcut icon" type="x-icon" href="ESM.jpg" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +39,7 @@
       .myBorder {
         border: solid gray 3px;
         border-top: transparent;
-        border-left: transparent;
+        border-right: transparent;
         border-radius: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -68,32 +76,31 @@
     <header class="gradient-bg text-white sticky top-0 z-40">
       <nav class="container myBorder mx-auto px-6 py-4">
         <div class="flex justify-between items-center text-black">
+          <div class="hidden md:flex space-x-9">
+            <a href="#contact" class="hover:text-blue-500 transition ml-7"
+              >Contact us</a
+            >
+            <a href="#pricing" class="hover:text-blue-500 transition"
+              >Packages</a
+            >
+            <a href="#testimonials" class="hover:text-blue-500 transition"
+              >Our consultants</a
+            >
+            <a href="#about" class="hover:text-blue-500 transition">About us</a>
+            <a href="#services" class="hover:text-blue-500 transition"
+              >Our services</a
+            >
+          </div>
+
           <div class="flex items-center space-x-4">
+            <a href="#hero"
+              ><h1 class="text-xl font-bold ml-3">ESM Investment Company</h1></a
+            >
             <img
               src="./imgs/ESM.jpg"
               alt="شعار مؤسسة التخطيط الاستراتيجي - مبنى حديث بتصميم عصري بألوان زرقاء وبيضاء تعبر عن الاحترافية والثقة"
               class="w-12 h-12 rounded-lg ml-3"
             />
-            <a href="#hero"
-              ><h1 class="text-xl font-bold">مؤسسة ESM للاستثمار</h1></a
-            >
-          </div>
-          <div class="hidden md:flex space-x-9">
-            <a href="#services" class="hover:text-blue-500 transition ml-7"
-              >خدماتنا</a
-            >
-            <a href="#about" class="hover:text-blue-500 transition"
-              >عن الشركة</a
-            >
-            <a href="#testimonials" class="hover:text-blue-500 transition"
-              >شبكة مستشارينا</a
-            >
-            <a href="#pricing" class="hover:text-blue-500 transition"
-              >الباقات</a
-            >
-            <a href="#contact" class="hover:text-blue-500 transition"
-              >اتصل بنا</a
-            >
           </div>
         </div>
       </nav>
@@ -103,17 +110,19 @@
     <section id="hero" class="hero py-20 pt-[160px]">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">
-          شريكك الأمثل للاستثمار الناجح في المملكة العربية السعودية
+          Your ideal partner for investment in the Kingdom of Saudi Arabia
         </h2>
         <p class="text-xl mb-8">
-          نقدم لك دراسات الجدوى والاستشارات المتخصصة لضمان نجاح مشروعك في عدة
-          قطاعات, كالقطاع الصناعي او التجاري او الخدمي.
+          we provide feasibility studies and specialized consultations to ensure
+          <br />
+          . the success of your project in several sectors, such as industrial,
+          commercial and service sectors
         </p>
         <button
           onclick="scrollToSection('pricing')"
           class="bg-white text-blue-800 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition"
         >
-          ابدأ مشروعك الآن
+          !START NOW
         </button>
       </div>
     </section>
@@ -122,7 +131,7 @@
     <section id="services" class="py-20 bg-white">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">
-          خدماتنا المتكاملة
+          Our Services
         </h2>
         <div class="grid md:grid-cols-3 gap-8 p-20">
           <div
@@ -134,9 +143,11 @@
               <span class="text-2xl">🏢</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">
-              تأسيس الشركات المحلية والأجنبية
+              establishing local and foreign companies
             </h3>
-            <p class="text-gray-600">داخل المملكة بجميع الإجراءات القانونية</p>
+            <p class="text-gray-600">
+              inside the Kingdom with all legal procedures
+            </p>
           </div>
           <div
             class="service-card bg-gray-50 p-8 rounded-xl shadow-lg text-center transition"
@@ -146,10 +157,10 @@
             >
               <span class="text-2xl">💼</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">استخراج رخصة الاستثمار</h3>
-            <p class="text-gray-600">
-              للمستثمرين الأجانب (رخصة الهيئة العامة للاستثمار)
-            </p>
+            <h3 class="text-xl font-semibold mb-4">
+              obtaining an investment license for foreign investors
+            </h3>
+            <p class="text-gray-600">(General Incestment Authority License)</p>
           </div>
           <div
             class="service-card bg-gray-50 p-8 rounded-xl shadow-lg text-center transition"
@@ -159,8 +170,12 @@
             >
               <span class="text-2xl">📄</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">استخراج الرخصةالتجارية</h3>
-            <p class="text-gray-600">وإتمام كافة المتطلبات الحكومية.</p>
+            <h3 class="text-xl font-semibold mb-4">
+              obtaining a commercial license
+            </h3>
+            <p class="text-gray-600">
+              and completing all government requrements
+            </p>
           </div>
 
           <div
@@ -172,11 +187,10 @@
               <span class="text-2xl">📊</span>
             </div>
             <h3 class="text-xl font-semibold mb-4">
-              إعداد دراسات الجدوى الاقتصادية
+              preparing economic feasibility studies for projects in various
+              sectors
             </h3>
-            <p class="text-gray-600">
-              لمشاريع في مختلف القطاعات, مع تحليل كامل للسوق.
-            </p>
+            <p class="text-gray-600">with a comprehensive market analysis</p>
           </div>
 
           <div
@@ -187,9 +201,9 @@
             >
               <span class="text-2xl">🏠</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">الاستشارات العقارية</h3>
+            <h3 class="text-xl font-semibold mb-4">real estate consulting</h3>
             <p class="text-gray-600">
-              تشمل العقارات التجارية, السكنية والصناعية
+              including commercial, industrial and residential properties
             </p>
           </div>
 
@@ -201,8 +215,10 @@
             >
               <span class="text-2xl">📢</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">خدمات تسويقية وإدارية</h3>
-            <p class="text-gray-600">مخصصة لدعم المستثمرين</p>
+            <h3 class="text-xl font-semibold mb-4">
+              marketing and administrative services
+            </h3>
+            <p class="text-gray-600">dedicated to supporting investors</p>
           </div>
 
           <div
@@ -213,9 +229,11 @@
             >
               <span class="text-2xl">🤝</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">الربط بين المستثمرين</h3>
+            <h3 class="text-xl font-semibold mb-4">
+              connecting local and international investors
+            </h3>
             <p class="text-gray-600">
-              محللين ودوليين لخلق شراكات استراتيجية ناجحة.
+              to create succesful strategic partnerships
             </p>
           </div>
 
@@ -227,8 +245,10 @@
             >
               <span class="text-2xl">📈</span>
             </div>
-            <h3 class="text-xl font-semibold mb-4">التحليل والدخول الذكي</h3>
-            <p class="text-gray-600">للسوق السعودي , لضمان أفضل الفرص.</p>
+            <h3 class="text-xl font-semibold mb-4">
+              analysis and smart entry to the Saudi market
+            </h3>
+            <p class="text-gray-600">to ensure the best opportunities</p>
           </div>
         </div>
       </div>
@@ -238,70 +258,78 @@
     <section id="about" class="py-20 bg-gray-50">
       <div class="margin container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center p-20">
-          <div>
-            <img
-              src="imgs/esm photo1.jpg"
-              alt="فريق عمل احترافي في اجتماع عمل داخل مكتب عصري بألوان هادئة، يظهر التعاون والاحترافية في بيئة العمل"
-              class="rounded-x1 shadow-lg w-full"
-            />
-          </div>
-          <div>
+          <div class="text-left">
             <h2 class="text-3xl font-bold mb-6 text-gray-800">
-              عن مؤسسة ESM للاستثمار
+              About the Company
             </h2>
             <p class="text-gray-600 mb-4">
-              نحن شركة سعودية متخصصة في تقديم الحلول التسويقية والتجارية
-              المتكاملة للشركات المحلية والأجنبية. نسعى من خلال خبرتنا العميقة
-              في السوق السعودي إلى تمكين المستثمرين من دخول السوق بثقة واستقرار
+              We are a Saudi company specialized in providing integrated
+              marketing and commercial solutions for local and foreign
+              companies. Through our deep experience in the Saudi market, we aim
+              to enable investors to enter the market with confidence and
+              stability
             </p>
             <p class="text-gray-600 mb-4">
-              تأسست شركتنا على يد فريق من الخبراء في مجالات التسويق والاستثمار
-              والدراسات الاقتصادية. وقد تمكنا عبر السنوات من مساعدة عشرات
-              الشركات في تأسيس أعمالها بالمملكة والحصول على الرخصة التجارية
-              والاستثمارية, بالإضافة إلى تقديم استشارات فعالة في القطاعات
-              العقارية, التجارية, الصناعية والخدمية.
+              Our company was founded by a team of experts in marketing,
+              investment, and economic studies. Over the years, we have helped
+              dozens of companies establish their businesses in the Kingdom,
+              obtain commercial and investment licenses, and receive effective
+              consulting services in the real estate, commercial, industrial,
+              and service sectors
             </p>
             <div class="grid grid-cols-2 gap-4 mt-8">
               <div class="text-center">
                 <div class="text-4xl font-bold text-blue-600">+7</div>
                 <div class="text-gray-600">
-                  <span class="font-bold text-2xl">سنوات خبرة</span><br />
-                  في السوق السعودي المتغير.
+                  <span class="font-bold text-2xl">Experience years</span><br />
+                  in the evolving Saudi market
                 </div>
               </div>
 
               <div class="text-center">
                 <div class="text-4xl font-bold text-blue-600">+35</div>
                 <div class="text-gray-600">
-                  <span class="font-bold text-2xl">شركة</span><br />
-                  تم تأسيسها بنجاح عبر فريقنا
+                  <span class="font-bold text-2xl">Companies</span><br />
+                  successfully established by our team
                 </div>
               </div>
 
               <div class="text-center">
                 <div class="text-4xl font-bold text-blue-600">+60</div>
                 <div class="text-gray-600">
-                  <span class="font-bold text-2xl">دراسة جدوى</span><br />
-                  تم تنفيذها بدقة واحترافية.
+                  <span class="font-bold text-2xl">Feasibility study</span
+                  ><br />
+                  was executed with precision and professionalism
                 </div>
               </div>
 
               <div class="text-center">
                 <div class="text-4xl font-bold text-blue-600">+27</div>
                 <div class="text-gray-600">
-                  <span class="font-bold text-2xl">رخصة استثمار</span><br />
-                  تم اصدارها للمستثمرين
+                  <span class="font-bold text-2xl">Investment license</span
+                  ><br />
+                  have been issued to the investors
                 </div>
               </div>
 
               <div class="text-center">
                 <div class="text-4xl font-bold text-blue-600">4</div>
                 <div class="text-gray-600">
-                  <span class="font-bold text-2xl">مدن رئيسية</span><br />
-                  نعمل بها : الرياض, جدة, مكة, المدينة.
+                  <span class="font-bold text-2xl"
+                    >: Main cities working on</span
+                  ><br />
+                  Riyadh, Jeddah, Makkah and Maddina
                 </div>
               </div>
             </div>
+          </div>
+
+          <div>
+            <img
+              src="imgs/esm photo1.jpg"
+              alt="فريق عمل احترافي في اجتماع عمل داخل مكتب عصري بألوان هادئة، يظهر التعاون والاحترافية في بيئة العمل"
+              class="rounded-x1 shadow-lg w-full"
+            />
           </div>
         </div>
       </div>
@@ -315,16 +343,21 @@
           <div>
             <h2
               class="psuduEl text-5xl font-bold mb-6 text-gray-800"
-              style="color: #b49c75; font-family: 'Tajawal'; position: relative"
+              style="
+                color: #b49c75;
+                font-family: 'Tajawal';
+                position: relative;
+                text-align: left;
+              "
             >
-              رؤيتنــــا
+              Our vision
             </h2>
             <p class="text-gray-600 mb-10 font-bold">
               أن نكون الشريك الاستثماري الأمثل الذي يقود التحول الاقتصادي من
               خلال ربط رؤوس الأموال العالمية بالفرص الاستثمارية الواعدة في
               المملكة العربية السعودية.
             </p>
-            <p class="text-gray-600 mb-4 font-bold">
+            <p class="text-gray-600 mb-4 font-bold text-left" dir="ltr">
               To be the ideal investment partner leading economic tranformation
               by connecting global capital with promising opportunities in Saudi
               Arabia.
@@ -363,10 +396,11 @@
             font-family: 'Tajawal';
             position: relative;
             margin-right: -54px;
+            text-align: left;
           "
           class="psuduEl"
         >
-          قيمنـــــا<br />
+          Our values <br />
         </h2>
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <!-- قيمة 1 -->
@@ -399,21 +433,20 @@
                 font-size: 30px;
               "
             >
-              الابتكار
+              innovation
             </h4>
-            <p class="text-gray-600 mb-5 font-bold">
-              نواكب تطورات السوق ونقدم استراتيجيات استثمارية جديدة ومرنة.
-            </p>
+
             <p
               style="
                 font-size: 12px;
                 color: #999;
                 line-height: 1.2;
                 margin-top: 10px;
+                text-align: left;
               "
             >
               Innovation: We keep pace with market trends and provide flexible,
-              forward-thinking investment strategies.
+              forward-thinking investment strategies
             </p>
           </div>
 
@@ -447,22 +480,20 @@
                 font-size: 30px;
               "
             >
-              الالتزام
+              commitment
             </h4>
-            <p class="text-gray-600 mb-5 font-bold">
-              نعمل وفق الأنظمة واللوائح السعودية بما يضمن استثمارات آمنة
-              ومستدامة.
-            </p>
+
             <p
               style="
                 font-size: 12px;
                 color: #999;
                 line-height: 1.2;
                 margin-top: 10px;
+                text-align: left;
               "
             >
               Commitment: We comply fully with Saudi laws and regulations to
-              ensure safe and sustainable investments.
+              ensure safe and sustainable investments
             </p>
           </div>
 
@@ -496,21 +527,20 @@
                 font-size: 30px;
               "
             >
-              الشراكة
+              partnership
             </h4>
-            <p class="text-gray-600 mb-5 font-bold">
-              نبني علاقات طويلة قائمة على الثقة والمنفعة المتبادلة.
-            </p>
+
             <p
               style="
                 font-size: 12px;
                 color: #999;
                 line-height: 1.2;
                 margin-top: 10px;
+                text-align: left;
               "
             >
               Partnership: We build long-term relationships based on trust and
-              mutual benefit.
+              mutual benefit
             </p>
           </div>
 
@@ -544,21 +574,20 @@
                 font-size: 30px;
               "
             >
-              التميز
+              excellence
             </h4>
-            <p class="text-gray-600 mb-5 font-bold">
-              نقدم حلولًا مبتكرة مدعومة بخبرات محلية وعالمية.
-            </p>
+
             <p
               style="
                 font-size: 12px;
                 color: #999;
                 line-height: 1.2;
                 margin-top: 10px;
+                text-align: left;
               "
             >
               Excellence: We deliver innovative solutions backed by both local
-              and global expertise.
+              and global expertise
             </p>
           </div>
 
@@ -592,21 +621,20 @@
                 font-size: 30px;
               "
             >
-              النزاهة
+              integrity
             </h4>
-            <p class="text-gray-600 mb-5 font-bold">
-              نلتزم بالشفافية في جميع تعاملاتنا مع العملاء والشركاء.
-            </p>
+
             <p
               style="
                 font-size: 12px;
                 color: #999;
                 line-height: 1.2;
                 margin-top: 10px;
+                text-align: left;
               "
             >
               Integrity: We uphold transparency in all dealings with clients and
-              partners.
+              partners
             </p>
           </div>
         </div>
@@ -648,7 +676,7 @@
     <section id="pricing" class="py-20 bg-gray-50">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">
-          باقات دراسات الجدوى
+          Feasibility study packages
         </h2>
         <div class="grid md:grid-cols-4 gap-8 p-20">
           <div
@@ -657,39 +685,39 @@
             <div
               class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4"
             >
-              تجريبية مجانية
+              !! Free trial
             </div>
-            <h3 class="text-xl font-semibold mb-4">الباقة التجريبية</h3>
-            <div class="text-3xl font-bold text-green-600 mb-6">مجاناً</div>
+            <h3 class="text-xl font-semibold mb-4">Trial package</h3>
+            <div class="text-3xl font-bold text-green-600 mb-6">FREE</div>
             <ul class="text-gray-600 mb-8 space-y-3">
-              <li>نموذج تجريبي لدراسة الجدوى</li>
-              <li>استشارة أولية مجانية (30 دقيقة)</li>
-              <li>تقييم مبدئي للمشروع</li>
-              <li>دليل شامل لخطوات البدء</li>
+              <li>Feasibility Study Pilot</li>
+              <li>Free Initial Consultation (30 minutes)</li>
+              <li>Initial Project Evaluation</li>
+              <li>Comprehensive Guide to Getting Started</li>
             </ul>
             <button
               onclick="selectPlan('trial')"
               class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition"
             >
-              احصل عليها مجاناً
+              ! Get it free now
             </button>
           </div>
           <div
             class="pricing-card bg-white border border-gray-200 p-8 rounded-xl text-center"
           >
-            <h3 class="text-xl font-semibold mb-4">الباقة الأساسية</h3>
-            <div class="text-3xl font-bold text-gray-600 mb-6">1,499 ر.س</div>
+            <h3 class="text-xl font-semibold mb-4">Basic package</h3>
+            <div class="text-3xl font-bold text-gray-600 mb-6">1,499 SAR</div>
             <ul class="text-gray-600 mb-8 space-y-3">
-              <li>دراسة جدوى أولية</li>
-              <li>تحليل السوق الأساسي</li>
-              <li>تقرير مبدئي بالنتائج</li>
-              <li>دعم عبر البريد الإلكتروني</li>
+              <li>Preliminary feasibility study</li>
+              <li>Basic market analysis</li>
+              <li>Preliminary results report</li>
+              <li>Email support</li>
             </ul>
             <button
               onclick="selectPlan('basic')"
               class="hover-on w-full bg-gray-600 text-white py-3 rounded-lg transition"
             >
-              اختر الباقة
+              select this package
             </button>
           </div>
           <div
@@ -698,42 +726,42 @@
             <div
               class="absolute top-0 right-0 bg-yellow-400 text-blue-900 px-4 py-1 rounded-bl-lg"
             >
-              الأكثر طلباً
+              Most requested
             </div>
-            <h3 class="text-xl font-semibold mb-4">الباقة المتكاملة</h3>
-            <div class="text-3xl font-bold text-white mb-6">2,999 ر.س</div>
+            <h3 class="text-xl font-semibold mb-4">The integrated package</h3>
+            <div class="text-3xl font-bold text-white mb-6">2,999 SAR</div>
             <ul class="text-blue-100 mb-8 space-y-3">
-              <li>دراسة جدوى شاملة</li>
-              <li>تحليل مفصل للسوق</li>
-              <li>دراسة مالية متقدمة</li>
-              <li>دعم هاتفي وأونلاين</li>
-              <li>3 جلسات استشارية</li>
+              <li>Comprehensive feasibility study</li>
+              <li>Detailed market analysis</li>
+              <li>Advanced financial study</li>
+              <li>Phone and online support</li>
+              <li>3 consulting sessions</li>
             </ul>
             <button
               onclick="selectPlan('premium')"
               class="hover-on w-full bg-white text-blue-600 py-3 rounded-lg transition"
             >
-              اختر الباقة
+              select this package
             </button>
           </div>
           <div
             class="pricing-card bg-white border border-gray-200 p-8 rounded-xl text-center"
           >
-            <h3 class="text-xl font-semibold mb-4">الباقة المتميزة</h3>
-            <div class="text-3xl font-bold text-gray-600 mb-6">4,999 ر.س</div>
+            <h3 class="text-xl font-semibold mb-4">The premium package</h3>
+            <div class="text-3xl font-bold text-gray-600 mb-6">4,999 SAR</div>
             <ul class="text-gray-600 mb-8 space-y-3">
-              <li>دراسة جدوى متقدمة</li>
-              <li>تحليل تنافسي شامل</li>
-              <li>دراسة مالية مفصلة</li>
-              <li>دعم مخصص 24/7</li>
-              <li>6 جلسات استشارية</li>
-              <li>متابعة لمدة 3 أشهر</li>
+              <li>Advanced feasibility study</li>
+              <li>Comprehensive competitive analysis</li>
+              <li>Detailed financial study</li>
+              <li>personalized support 24/7</li>
+              <li>consulting sessions 6</li>
+              <li>month follow-up 3</li>
             </ul>
             <button
               onclick="selectPlan('enterprise')"
               class="hover-on w-full bg-gray-600 text-white py-3 rounded-lg transition"
             >
-              اختر الباقة
+              select this package
             </button>
           </div>
         </div>
@@ -760,26 +788,26 @@
               class="mr-2"
               checked
             />
-            <span>بطاقة ائتمان</span>
+            <span>credit card</span>
           </label>
           <label
             class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer"
           >
             <input type="radio" name="payment" value="mada" class="mr-2" />
-            <span>مدى</span>
+            <span>mada</span>
           </label>
         </div>
         <button
           onclick="processPayment()"
           class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
         >
-          ادفع الآن
+          pay now
         </button>
         <button
           onclick="closeModal()"
           class="w-full bg-gray-200 text-gray-700 py-3 rounded-lg mt-3 hover:bg-gray-300 transition"
         >
-          إلغاء
+          cancel
         </button>
       </div>
     </div>
@@ -819,10 +847,12 @@
         >
           <span class="text-2xl text-blue-600">🎁</span>
         </div>
-        <h3 class="text-2xl font-bold mb-4 text-blue-600">تم التسجيل بنجاح!</h3>
-        <p class="text-gray-600 mb-6">
-          تم إرسال الباقة التجريبية إلى بريدك الإلكتروني. يمكنك الآن تجربة
-          خدماتنا مجاناً.
+        <h3 class="text-2xl font-bold mb-4 text-blue-600">
+          ! Registration completed
+        </h3>
+        <p class="text-gray-600 mb-6" dir="ltr">
+          Your trial package has been sent to your email. You can now try our
+          services for free.
         </p>
         <button
           onclick="closeModal()"
@@ -840,15 +870,16 @@
         <div class="grid md:grid-cols-1 gap-12 items-center">
           <div>
             <h2
-              class="psuduEl text-5xl font-bold mb-6 text-gray-800"
+              class="text-5xl font-bold mb-6 text-gray-800"
               style="
                 color: #b49c75;
                 font-family: 'Tajawal';
                 position: relative;
-                margin-right: 81px;
+                padding-left: 141px;
+                text-align: left;
               "
             >
-              لماذا نحن ؟
+              ? Why us
             </h2>
             <p class="text-gray-600 mb-10 font-bold"></p>
             <p class="text-gray-600 mb-4 font-bold"></p>
@@ -869,12 +900,12 @@
     <section id="contact" class="py-20 bg-white">
       <div class="container mx-auto px-6" style="max-width: 90%">
         <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">
-          اتصل بنا
+          Contact us
         </h2>
         <div class="grid md:grid-cols-2 gap-12">
           <div>
             <div class="bg-white p-8 rounded-xl shadow-lg">
-              <h3 class="text-xl font-semibold mb-6">معلومات التواصل</h3>
+              <h3 class="text-xl font-semibold mb-6">contact info</h3>
               <div class="space-y-4">
                 <div class="flex items-center">
                   <span
@@ -895,27 +926,29 @@
                     class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
                     >📍</span
                   >
-                  <span>الرياض، المملكة العربية السعودية</span>
+                  <span>Riyadh, Saudi Arabia</span>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div class="bg-white p-8 rounded-xl shadow-lg">
-              <h3 class="text-xl font-semibold mb-6">أرسل رسالة</h3>
+            <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+              <h3 class="text-xl font-semibold mb-6 text-left">
+                send a message
+              </h3>
               <form class="space-y-4">
                 <input
                   type="text"
-                  placeholder="الاسم الكامل"
+                  placeholder="full name"
                   class="w-full p-3 border border-gray-200 rounded-lg"
                 />
                 <input
                   type="email"
-                  placeholder="البريد الإلكتروني"
+                  placeholder="e-mail"
                   class="w-full p-3 border border-gray-200 rounded-lg"
                 />
                 <textarea
-                  placeholder="رسالتك"
+                  placeholder="your message"
                   rows="4"
                   class="w-full p-3 border border-gray-200 rounded-lg"
                 ></textarea>
@@ -923,7 +956,7 @@
                   type="submit"
                   class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
                 >
-                  إرسال الرسالة
+                  send a message
                 </button>
               </form>
             </div>
@@ -933,7 +966,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer dir="ltr" class="bg-gray-800 text-white py-12">
       <div class="container myBorder mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
@@ -941,46 +974,50 @@
               <img
                 src="imgs/ESM.jpg"
                 alt="شعار مؤسسة التخطيط الاستراتيجي - مبنى حديث بتصميم عصري بألوان زرقاء وبيضاء تعبر عن الاحترافية والثقة"
-                class="w-12 h-12 rounded-lg ml-3"
+                class="w-12 h-12 rounded-lg mr-3"
               />
-              <span class="font-bold">مؤسسة ESM للاستثمار</span>
+              <span class="font-bold">ESM Investment Company</span>
             </div>
-            <p class="text-gray-400">نحو مستقبل استثماري ناجح</p>
+            <p class="text-gray-400">towards a successful investment future</p>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">خدماتنا</h4>
+            <h4 class="font-semibold mb-4">services</h4>
             <ul class="space-y-2 text-gray-400">
-              <li>دراسات الجدوى</li>
-              <li>الاستشارات الإدارية</li>
-              <li>التخطيط الاستراتيجي</li>
+              <li>feasibility studies</li>
+              <li>management consulting</li>
+              <li>strategic planning</li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">روابط سريعة</h4>
+            <h4 class="font-semibold mb-4">quick links</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href="#services" class="hover:text-white">خدماتنا</a></li>
-              <li><a href="#about" class="hover:text-white">عن الشركة</a></li>
+              <li><a href="#services" class="hover:text-white">services</a></li>
+              <li><a href="#about" class="hover:text-white">about us</a></li>
               <li>
                 <a href="#testimonials" class="hover:text-white"
-                  >تجارب العملاء</a
+                  >customer experiences</a
                 >
               </li>
-              <li><a href="#pricing" class="hover:text-white">الباقات</a></li>
+              <li><a href="#pricing" class="hover:text-white">packages</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">تابعنا</h4>
+            <h4 class="font-semibold mb-4">follow us</h4>
             <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
-              <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
-              <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+              <a href="" class="text-gray-400 hover:text-white"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
           </div>
         </div>
         <div
           class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
         >
-          <p>مؤسسة ESM للاستثمار . جميع الحقوق محفوظة.©</p>
+          <p>©ESM Investment Foundation, all rights reserved</p>
         </div>
       </div>
     </footer>
@@ -988,3 +1025,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+<!-- © -->

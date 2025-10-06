@@ -17,12 +17,12 @@ function selectPlan(plan) {
   document.getElementById("paymentModal").classList.remove("hidden");
 
   const planNames = {
-    basic: "الباقة الأساسية",
-    premium: "الباقة المتكاملة",
-    enterprise: "الباقة المتميزة",
+    basic: "Basic Package",
+    premium: "Integrated Package",
+    enterprise: "Premium Package",
   };
 
-  document.getElementById("modalTitle").textContent = `دفع ${planNames[plan]}`;
+  document.getElementById("modalTitle").textContent = `Pay ${planNames[plan]}`;
 }
 
 function closeModal() {

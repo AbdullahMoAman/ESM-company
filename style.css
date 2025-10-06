@@ -2,6 +2,11 @@
 الخط الرسمي
 font-family: 'Tajawal'; 
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Tajawal", sans-serif;
@@ -13,14 +18,18 @@ body {
   color: black;
 }
 
+.container {
+  max-width: 1470px;
+}
+
 .psuduEl::before {
   content: "";
   position: absolute;
   background-color: #b49c75;
   width: 12px;
   height: 60px;
-  top: 0px;
-  right: -30px;
+  top: -6px;
+  left: -24px;
 }
 
 .our-values::before {
@@ -61,3 +70,5 @@ body {
   transition: 0.2s ease;
   transform: scale(1.07) translateY(10px);
 }
+
+/* Selecting spicifec language modal */
